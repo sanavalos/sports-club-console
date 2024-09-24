@@ -38,10 +38,9 @@ namespace SportsClubSystem {
         private Activity? findActivity(String? name) {
             foreach (Activity activity in activities) {
                 if (activity.Name != null && name != null) {
-                    string nombre1EnMinusculas = activity.Name.ToLower();
-                    string nombre2EnMinusculas = name.ToLower();
-
-                    if (nombre1EnMinusculas == nombre2EnMinusculas) {
+                    string activityOne = activity.Name.ToLower();
+                    string activityTwo = name.ToLower();
+                    if (activityOne == activityTwo) {
                         return activity;
                     }
                 }
